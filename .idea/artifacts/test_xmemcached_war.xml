@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="test_xmemcached:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="nosql_01.war">
+      <element id="artifact" artifact-name="test_xmemcached:war exploded" />
+    </root>
+  </artifact>
+</component>
