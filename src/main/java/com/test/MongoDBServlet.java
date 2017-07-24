@@ -32,7 +32,7 @@ public class MongoDBServlet extends HttpServlet {
         ResultVO resultVO=null;
         collection=getCollection();
         StringBuffer stringBuffer=new StringBuffer();
-        stringBuffer.append("<html><head><title></title></head><body><h2>Mongodb2X 2.10+ driver methods:</h2>");
+        stringBuffer.append("<html><head><title></title></head><body><h2>Mongodb driver methods:</h2>");
         resultVO=save();
         if(resultVO!=null){
             outStr="save:"+"<br>"+"duration:"+resultVO.getDuration()+"; "+"result str:"+resultVO.getStr();

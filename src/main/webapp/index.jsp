@@ -6,10 +6,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>XMemcached Client Test</title>
+<title>NoSQL Test</title>
 </head>
 <body>
-<a href="<%=contextPath%>/TestXMemcachedClientServlet?method=set">set</a><br/><br/>
+<%--<a href="<%=contextPath%>/TestXMemcachedClientServlet?method=set">set</a><br/><br/>
 <a href="<%=contextPath%>/TestXMemcachedClientServlet?method=get">get</a><br/><br/>
 <a href="<%=contextPath%>/TestXMemcachedClientServlet?method=gets">gets</a><br/><br/>
 <a href="<%=contextPath%>/TestXMemcachedClientServlet?method=cas">cas</a><br/><br/>
@@ -19,7 +19,10 @@
 <a href="<%=contextPath%>/TestXMemcachedClientServlet?method=delete">delete</a><br/><br/>
 <a href="<%=contextPath%>/TestXMemcachedClientServlet?method=incr">incr</a><br/><br/>
 <a href="<%=contextPath%>/TestXMemcachedClientServlet?method=decr">decr</a><br/><br/>
-<a href="<%=contextPath%>/TestXMemcachedClientServlet?method=flushAll">flushAll</a><br/><br/>
+<a href="<%=contextPath%>/TestXMemcachedClientServlet?method=flushAll">flushAll</a><br/><br/>--%>
+
+<h2>Memcached操作</h2>
+<a href="<%=contextPath%>/TestXMemcachedClientServlet?method=java">Memcached操作</a><br/><br/>
 
 
 <h2>Mongodb操作</h2>

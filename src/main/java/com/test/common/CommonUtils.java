@@ -31,7 +31,6 @@ public class CommonUtils {
 	/**
 	 * 向结果页面写标识
 	 * @param response
-	 * @param resultFlag
 	 */
 	public static void printToPage(HttpServletResponse response,String str){
 		if(response==null||isBlank(str)){

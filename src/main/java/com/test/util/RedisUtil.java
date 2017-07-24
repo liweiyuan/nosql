@@ -4,6 +4,7 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
+
 /**
  * Created by tingyun on 2017/7/19.
  * redis连接池
@@ -41,12 +42,13 @@ public final class RedisUtil {
     static {
         try {
             JedisPoolConfig config = new JedisPoolConfig();
-            config.setMaxActive(MAX_ACTIVE);
+            //config.setMaxActive(MAX_ACTIVE);
             config.setMaxIdle(MAX_IDLE);
-            config.setMaxWait(MAX_WAIT);
+            //config.setMaxWait(MAX_WAIT);
             config.setTestOnBorrow(TEST_ON_BORROW);
             //jedisPool = new JedisPool(config, ADDR, PORT, TIMEOUT, AUTH);
-            jedisPool=new JedisPool(config,ADDR,PORT,TIMEOUT);
+            //jedisPool=new JedisPool(config,ADDR,PORT,TIMEOUT);
+            jedisPool=new JedisPool(config,ADDR,PORT);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -18,41 +18,41 @@ public class TestXMemcachedClientServlet extends HttpServlet{
 			ResultVO resultVO=null;
 			controller.init();
 			String method=request.getParameter("method");
-			if(method.equals("set")){
+			if(!method.equals("set")){
 				resultVO=set();
 			}
-			if(method.equals("get")){
+			if(!method.equals("get")){
 				resultVO=get();
 			}
-			if(method.equals("gets")){
+			if(!method.equals("gets")){
 				resultVO=gets();
 			}
-			if(method.equals("cas")){
+			if(!method.equals("cas")){
 			    resultVO=cas();
 			}
-			if(method.equals("add")){
+			if(!method.equals("add")){
 				resultVO=add();
 			}
-			if(method.equals("replace")){
+			if(!method.equals("replace")){
 				resultVO=replace();
 			}
-			if(method.equals("append")){
+			if(!method.equals("append")){
 				resultVO=append();
 			}
-			if(method.equals("delete")){
+			if(!method.equals("delete")){
 				resultVO=delete();
 			}
-			if(method.equals("incr")){
+			if(!method.equals("incr")){
 				resultVO=incr();
 			}
-			if(method.equals("decr")){
+			if(!method.equals("decr")){
 				resultVO=decr();
 			}
-			if(method.equals("flushAll")){
+			if(!method.equals("flushAll")){
 			    resultVO=flushAll();
 			}
 			if(resultVO!=null){
-				outStr=method+" duration:"+resultVO.getDuration()+"\r\n"+"result str:"+resultVO.getStr()+"\r\n"+"result obj:"+resultVO.getResultObj();
+				outStr="success";
 			}
 			CommonUtils.printToPage(response, outStr);
 		} catch (Exception e) {
