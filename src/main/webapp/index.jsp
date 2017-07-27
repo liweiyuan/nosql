@@ -22,8 +22,9 @@
 <a href="<%=contextPath%>/TestXMemcachedClientServlet?method=flushAll">flushAll</a><br/><br/>--%>
 
 <h2>Memcached操作</h2>
-<a href="<%=contextPath%>/TestXMemcachedClientServlet?method=java">Memcached操作</a><br/><br/>
-
+<a href="<%=contextPath%>/TestXMemcachedClientServlet?method=java">Memcached(Xmemcached)操作</a><br/><br/>
+<a href="<%=contextPath%>/xmemcached?method=java">Memcached(whalin_memcached)操作</a><br/><br/>
+<a href="<%=contextPath%>/spymemcached?method=java">Memcached(spy_memcached)操作</a><br/><br/>
 
 <h2>Mongodb操作</h2>
 <a href="<%=contextPath%>/mongodb">mongodb操作</a><br/><br/>
